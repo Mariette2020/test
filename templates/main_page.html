@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}Питание при АИТ{% endblock %}
+
+{% block content %}
+
+    <div class="container my-5">
+        <!--<img src="static/pic/1.jpg" alt="eda" width="100">-->
+        <h1 class="text-center mb-4" style="font-family: 'Impact';">Питание при АИТ</h1>
+        <h2 style="color: green; font-family: 'Gabriola';">Что такое АИТ</h2>
+        <div class="row">
+            <div class="col-md-9">
+                <p align="justify" class="mb-0">Аутоиммунный тиреоидит – это воспалительное заболевание щитовидной железы, вызванное атакой специфических белков на клетки собственного организма. В результате нарушается выработка гормонов и человек чувствует себя плохо.
+                Поскольку заболевание носит воспалительный характер, главная задача – воспаление снизить и дать щитовидной железе время на восстановление.
+                Для этого нужно нормализовать режим дня, снизить уровень стресса, достаточно спать и, конечно, обратить внимание на питание.
+                Многие продукты являются откровенными провокаторами воспаления, их придется исключить, другие же, наоборот, помогают воспаление снять, про их необходимость в рационе нельзя забывать.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="static/pic/thyroid.jpg" alt="thyroid" width="250">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <a href="/exclude" class="button"><button class="image-button1"> </button></a>
+            </div>
+            <div class="col-md-6">
+                <a href="/include" class="button"><button class="image-button2"> </button></a>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <h1 style="color: firebrick; font-family: 'Gabriola';">Рецепты</h1>
+                <!-- Завтраки -->
+                <div class="col-md-6">
+                    <a href="/breakfasts" class="button"><button class="image-buttonb"> </button></a>
+                </div>
+
+                <!-- Обеды -->
+                <div class="col-md-6">
+                    <a href="/lunches" class="button"><button class="image-buttonl"> </button></a>
+                </div>
+        </div>
+        <div class="row mt-5">
+                <!-- Ужины -->
+                <div class="col-md-6">
+                    <a href="/dinners" class="button"><button class="image-buttond"> </button></a>
+                </div>
+
+                <!-- Десерты -->
+                <div class="col-md-6">
+                    <a href="/desserts" class="button"><button class="image-buttondes"> </button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9">
+                <h1 style="color: firebrick; font-family: 'Gabriola';">Комментарии</h1>
+            </div>
+            {% if current_user.is_authenticated %}
+                <div class="col-md-3">
+                    <a href="/write_a_comment" class="button"><button class="image-button-com"> </button></a>
+                </div>
+            {% endif %}
+
+        {% for item in comments %}
+            <h2 style="font-family: 'Impact';">{{item.title}}</h2>
+            <table>
+                <td class="alert alert-primary" role="alert">{{item.content}}</td>
+                <td class="alert alert-primary" role="alert">Автор - {{item.user.name}} {{item.user.surname}} {{item.user.email}}, Дата написания - {{item.created_date}}</td>
+            </table>
+            {% if current_user.is_authenticated and current_user == item.user %}
+                <div>
+                <a href="/comments/{{ item.id }}" class="btn btn-warning">
+                    Изменить
+                </a>
+                <a href="/comments_delete/{{ item.id }}" class="btn btn-danger">
+                    Удалить
+                </a>
+                </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

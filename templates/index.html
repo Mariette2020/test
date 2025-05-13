@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Works Log</h1>
+{% for item in works_log %}
+<h2>{{item.title}}</h2>
+<table border="1" width="800">
+    <tr class="alert alert-primary" role="alert">
+    <div><td>title of activity</td></div>
+    <div><td>team leader</td></div>
+    <div><td>duration</td></div>
+    <div><td>list of collaborators</td></div>
+    <div><td>is finished</td></div>
+    </tr>
+
+    <tr class="alert alert-danger" role="alert">
+    <div><td>{{item.title_of_activity}}</td></div>
+    <div><td>{{item.team_leader}}</td></div>
+    <div><td>{{item.duration}}</td></div>
+    <div><td>{{item.list_of_collaborators}}</td></div>
+        {% if item.is_finished == "Is finished" %}
+            <div><td class="alert alert-success" role="alert">{{item.is_finished}}</td></div>
+        {% else %}
+            <div><td class="alert alert-warning" role="alert">{{item.is_finished}}</td></div>
+        {% endif %}
+    </tr>
+</table>
+{% endfor %}
+{% endblock %}

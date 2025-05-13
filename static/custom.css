@@ -1,0 +1,275 @@
+body {
+    background-color: #e5e5e6;
+}
+.profile-photo {
+  width: 150px;
+  height: 150px;
+}
+table {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+}
+.image-button1 {
+  width: 450px;
+  height: 225px;
+  border: none;
+  background-image: url('pic/button1.png');
+  background-size: cover;
+}
+.image-button2 {
+  width: 450px;
+  height: 225px;
+  border: none;
+  background-image: url('pic/button2.png');
+  background-size: cover;
+}
+.image-buttonb {
+  width: 400px;
+  height: 400px;
+  border: none;
+  background-image: url('pic/breakfasts.jpg');
+  background-size: cover;
+}
+.image-buttonl {
+  width: 400px;
+  height: 400px;
+  border: none;
+  background-image: url('pic/lunches.jpg');
+  background-size: cover;
+}
+.image-buttond {
+  width: 400px;
+  height: 400px;
+  border: none;
+  background-image: url('pic/dinners.jpg');
+  background-size: cover;
+}
+.image-buttondes {
+  width: 400px;
+  height: 400px;
+  border: none;
+  background-image: url('pic/desserts.jpg');
+  background-size: cover;
+}
+.image-buttonb_fe {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/friedEgg.jpg');
+  background-size: cover;
+}
+.image-buttonb_om {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/omelet.jpg');
+  background-size: cover;
+}
+.image-buttonb_pm {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/pumpkin.jpg');
+  background-size: cover;
+}
+.image-buttonb_pr {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/porrige.jpg');
+  background-size: cover;
+}
+.image-buttonb_ccp {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/cottage-cheese-pancakes.jpg');
+  background-size: cover;
+}
+.image-buttonb_cp {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/cornporridge.jpg');
+  background-size: cover;
+}
+.image-buttonb_bp {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/buckwheat-porridge.jpg');
+  background-size: cover;
+}
+.image-buttonb_cc {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/breakfasts/cottage-cheese.jpg');
+  background-size: cover;
+}
+
+.image-buttonl_zh {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/lunches/zhi.jpg');
+  background-size: cover;
+}
+.image-buttonl_uh {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/lunches/uha.jpg');
+  background-size: cover;
+}
+.image-buttonl_rs {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/lunches/rassoln.jpg');
+  background-size: cover;
+}
+.image-buttonl_kf {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/lunches/kartofeln.jpg');
+  background-size: cover;
+}
+.image-buttonl_gr {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/lunches/grib.jpg');
+  background-size: cover;
+}
+.image-buttonl_gh {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/lunches/goroh.jpg');
+  background-size: cover;
+}
+.image-buttonl_fr {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/lunches/frikad.jpg');
+  background-size: cover;
+}
+
+.image-buttond_cb {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/cabbage.jpg');
+  background-size: cover;
+}
+.image-buttond_ch {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/chicken.jpg');
+  background-size: cover;
+}
+.image-buttond_ez {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/ezhiki.jpg');
+  background-size: cover;
+}
+.image-buttond_fs {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/fish.jpg');
+  background-size: cover;
+}
+.image-buttond_mb {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/meatballs.jpg');
+  background-size: cover;
+}
+.image-buttond_ms {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/mushrooms.jpg');
+  background-size: cover;
+}
+.image-buttond_pl {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/plov.jpg');
+  background-size: cover;
+}
+.image-buttond_vg {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/dinners/vegetables.jpg');
+  background-size: cover;
+}
+
+.image-buttondes_cf {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/desserts/healthy_conf.jpg');
+  background-size: cover;
+}
+.image-buttondes_pn {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/desserts/pancakes.jpg');
+  background-size: cover;
+}
+.image-buttondes_pc {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/desserts/porr_cake.jpg');
+  background-size: cover;
+}
+.image-buttondes_cs {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/desserts/cookies.jpg');
+  background-size: cover;
+}
+.image-buttondes_ap {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/desserts/applepie.jpg');
+  background-size: cover;
+}
+.image-buttondes_cb {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/desserts/cornbiscuits.jpg');
+  background-size: cover;
+}
+.image-buttondes_pz {
+  width: 900px;
+  height: 200px;
+  border: none;
+  background-image: url('pic/food/desserts/pizza.jpg');
+  background-size: cover;
+}
+.image-button-com {
+  width: 200px;
+  height: 60px;
+  border: none;
+  background-image: url('pic/comment.png');
+  background-size: cover;
+}
